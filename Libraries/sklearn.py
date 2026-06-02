@@ -1,10 +1,14 @@
+
+#! Data Preprocessing
 import sklearn.preprocessing
 from sklearn.preprocessing import StandardScaler
+
 
 #! Model Selection
 import sklearn.model_selection
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
+
 
 #! Supervised Learning
 import sklearn.linear_model
@@ -17,9 +21,11 @@ from sklearn.ensemble import RandomForestClassifier
 import sklearn.svm
 from sklearn.svm import SVM
 
+
 #! Unseupervised Learning
 import sklearn.cluster
 from sklearn.cluster import KMeans
+
 
 #! Model Evaluation
 import sklearn.metrics
