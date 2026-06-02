@@ -7,6 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # Generate Data
 import sklearn.datasets
 from sklearn.datasets import make_blobs
+from sklearn.datasets import load_iris
 
 
 # Model Selection
@@ -20,14 +21,18 @@ import sklearn.linear_model
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 
+import sklearn.naive_bayes
+from sklearn.naive_bayes import GaussianNB
+
+import sklearn.tree
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import plot_tree
+
 import sklearn.ensemble
 from sklearn.ensemble import RandomForestClassifier 
 
 import sklearn.svm
 from sklearn.svm import SVM
-
-import sklearn.naive_bayes
-from sklearn.naive_bayes import GaussianNB
 
 
 # Unseupervised Learning
