@@ -26,6 +26,9 @@ from sklearn.ensemble import RandomForestClassifier
 import sklearn.svm
 from sklearn.svm import SVM
 
+import sklearn.naive_bayes
+from sklearn.naive_bayes import GaussianNB
+
 
 # Unseupervised Learning
 import sklearn.cluster
