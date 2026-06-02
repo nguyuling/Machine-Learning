@@ -1,16 +1,21 @@
 
-#! Data Preprocessing
+# Data Preprocessing
 import sklearn.preprocessing
 from sklearn.preprocessing import StandardScaler
 
 
-#! Model Selection
+# Generate Data
+import sklearn.datasets
+from sklearn.datasets import make_blobs
+
+
+# Model Selection
 import sklearn.model_selection
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 
 
-#! Supervised Learning
+# Supervised Learning
 import sklearn.linear_model
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
@@ -22,12 +27,12 @@ import sklearn.svm
 from sklearn.svm import SVM
 
 
-#! Unseupervised Learning
+# Unseupervised Learning
 import sklearn.cluster
 from sklearn.cluster import KMeans
 
 
-#! Model Evaluation
+# Model Evaluation
 import sklearn.metrics
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import mean_squared_error
