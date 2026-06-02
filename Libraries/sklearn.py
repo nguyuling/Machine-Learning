@@ -32,7 +32,7 @@ import sklearn.ensemble
 from sklearn.ensemble import RandomForestClassifier 
 
 import sklearn.svm
-from sklearn.svm import SVM
+from sklearn.svm import SVC
 
 
 # Unseupervised Learning
