@@ -36,4 +36,37 @@
   </tbody>
 </table>
 
+## Linear Regression
+`linear_model.LinearRegression`
+| Classification | Regression |
+| -------------- | ---------- |
+| — | Use a single independent variable to predict the dependent variable based on the line of regression (best-fit line) |
+
+![Linear Regression](Model-Image/linear_reg.png)
+
+<table>
+  <thead>
+    <tr>
+      <th align="center" width="50%">Strength</th>
+      <th align="center" width="50%">Weakness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">
+        <ul>
+          <li>Fast to train and predict.</li>
+          <li>Easy to understand using formulas.</li>
+        </ul>
+      </td>
+      <td valign="top">
+        <ul>
+          <li>Coeeficient might be hard to interpret if the dataset has highly correlated features.</li>
+          <li>Does not work well on samll datasets.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
  # Unsupervised Learning
