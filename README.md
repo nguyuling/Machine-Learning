@@ -11,15 +11,19 @@
   </tr>
   <tr valign="top">
     <td>K-Nearest Neighbors</td>
-    <td>neighbors. kneighborsclassifier</td>
+    <td>neighbors.kneighborsclassifier</td>
     <td>
-      - Simple and easy to understand.<br>
-      - Versatile as it can be used for classificaiton and regression
+      <ul>
+        <li>Simple and easy to understand.</li>
+        <li>Versatile as it can be used for classificaiton and regression</li>
+      </ul>
     </td>
     <td>
-      - High memory storage required.<br>
-      - Does not work well on datasets with many features.<br>
-      - Slow prediction if N is big.
+      <ul>
+        <li>High memory storage required.</li>
+        <li>Does not work well on datasets with many features.</li>
+        <li>Slow prediction if N is big.</li>
+      </ul>
     </td>
     <td></td>
   </tr>
