@@ -1,8 +1,8 @@
 # Supervised Learning
-- a type of machine learning that trained the model using labeled dataset to predict outcomes
+A type of machine learning that trained the model using labeled dataset to predict outcomes
 
 <details>
-<summary><h3>K-Nearest Neighbors<h3></summary>
+<summary><h4>K-Nearest Neighbors<h4></summary>
 
 `neighbors.KNeighborsClassifier`
 
@@ -41,7 +41,7 @@
 
 
 <details>
-<summary><h3>Linear Regression<h3></summary>
+<summary><h4>Linear Regression<h4></summary>
 
 `linear_model.LinearRegression`
 
