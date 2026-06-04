@@ -1,7 +1,5 @@
+# load dataset
 import pandas as pd
-import matplotlib.pyplot as plt
-
-# load data
 path = 'Data/Salary_Data.csv'
 headernames = ['year-of-experience', 'salary']
 dataset = pd.read_csv(path, names=headernames)
@@ -12,6 +10,7 @@ X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
 # scatter plot of train test data
+import matplotlib.pyplot as plt
 plt.scatter(X, y, color='green')
 plt.title('Salary vs Experience')
 plt.xlabel('Years of Experience')
