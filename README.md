@@ -2,15 +2,13 @@
 - a type of machine learning that trained the model using labeled dataset to predict outcomes
 
 <details>
-<summary> ### 1.  K-Nearest Neighbors </summary>
-`neighbors.KNeighborsClassifier`
+<summary>1. K-Nearest Neighbors </summary>
 
+`neighbors.KNeighborsClassifier`
 | Classification | Regression |
 | -------------- | ---------- |
 | Assign the test data point to the class that appears most frequently among the k-nearest neighbors | Assign the test data point the average of the k-nearest neighbors' values |
-
 ![K-Nearest Neighbors](Model-Image/knn.png)
-
 <table>
   <thead>
     <tr>
@@ -38,15 +36,14 @@
 </table>
 </details>
 
-### 2.  Linear Regression
-`linear_model.LinearRegression`
+<details>
+<summary>2. Linear Regression</summary>
 
+`linear_model.LinearRegression`
 | Classification | Regression |
 | -------------- | ---------- |
 | N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
-
 ![Linear Regression](Model-Image/linear-reg.png)
-
 <table>
   <thead>
     <tr>
@@ -71,5 +68,7 @@
     </tr>
   </tbody>
 </table>
+</details>
 
- # Unsupervised Learning
+
+# Unsupervised Learning
