@@ -1,7 +1,5 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-
 # load dataset
+import pandas as pd
 path = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 headernames = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Class']
 dataset = pd.read_csv(path, names=headernames)
