@@ -40,7 +40,7 @@
 `linear_model.LinearRegression`
 | Classification | Regression |
 | -------------- | ---------- |
-| N/A | Use a single independent variable to predict the dependent variable based on the line of regression (best-fit line) |
+| N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
 
 ![Linear Regression](Model-Image/linear_reg.png)
 
