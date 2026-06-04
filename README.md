@@ -8,6 +8,7 @@
 | -------------- | ---------- |
 | Assign the test data point to the class that appears most frequently among the k-nearest neighbors | Assign the test data point the average of the k-nearest neighbors' values |
 
+![Linear Regression](Model-Image/linear_reg.png)
 ![K-Nearest Neighbors](Model-Image/knn.png)
 
 <table>
@@ -43,7 +44,7 @@
 | -------------- | ---------- |
 | N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
 
-![Linear Regression](Model-Image/linear_reg.png)
+
 
 <table>
   <thead>
