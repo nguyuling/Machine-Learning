@@ -32,3 +32,44 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy Score:\n", accuracy_score(y_test, y_pred))
+
+# use PCA to reduce to 2d for visualization
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+X_train_pca = pca.fit_transform(X_train)
+X_test_pca = pca.transform(X_test)
+
+# encode labels to numeric values for visualization
+from sklearn.preprocessing import LabelEncoder
+label_encoder = LabelEncoder()
+y_train_encoded = label_encoder.fit_transform(y_train)
+
+# model training
+knn_neighbors = KNeighborsClassifier(n_neighbors=3)
+knn_neighbors.fit(X_train_pca, y_train_encoded)
+
+# model testing (select 1 random test data)
+test_point_index = 0
+test_point = X_test_pca[test_point_index:test_point_index+1]
+true_label_test_point = y_test[test_point_index]
+distances, neighbor_indices = knn_neighbors.kneighbors(test_point)
+nearest_neighbors = X_train_pca[neighbor_indices[0]]
+
+# data visualization
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10, 8))
+scatter_train = plt.scatter(X_train_pca[:, 0], X_train_pca[:, 1], c=y_train_encoded, cmap='viridis', edgecolors='k', s=100, alpha=0.7, label='Training Data')
+plt.scatter(test_point[:, 0], test_point[:, 1], c='red', marker='X', s=200, label=f'Test Point (True: {true_label_test_point})', zorder=5)
+
+for i in range(len(nearest_neighbors)):
+    plt.plot([test_point[0, 0], nearest_neighbors[i, 0]],
+             [test_point[0, 1], nearest_neighbors[i, 1]],
+             '--', color='gray', linewidth=1)
+
+plt.title('KNN: Training Data with 3 Nearest Neighbors of a Test Point')
+plt.xlabel(f'Principal Component 1 ({pca.explained_variance_ratio_[0]:.2%})')
+plt.ylabel(f'Principal Component 2 ({pca.explained_variance_ratio_[1]:.2%})')
+plt.grid(True, alpha=0.3)
+plt.legend()
+plt.tight_layout()
+plt.savefig('knn.png', dpi=300, bbox_inches='tight')
