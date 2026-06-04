@@ -43,7 +43,7 @@
 | -------------- | ---------- |
 | N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
 
-![Linear Regression](Model-Image/knn.png)
+![Linear Regression](Model-Image/linear-reg.png)
 
 <table>
   <thead>
