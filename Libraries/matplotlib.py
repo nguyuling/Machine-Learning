@@ -1,5 +1,3 @@
-
-#! for ploting graph
 import matplotlib.pyplot as plt
 plt.scatter(X, y, color='red')
 plt.plot(X, y, color='red')
