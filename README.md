@@ -11,7 +11,7 @@
   </tr>
   <tr valign="top">
     <td>K-Nearest Neighbors</td>
-    <td>neighbors.kneighborsclassifier</td>
+    <td>neighbors. kneighborsclassifier</td>
     <td>
       - Simple and easy to understand.<br>
       - Versatile as it can be used for classificaiton and regression
