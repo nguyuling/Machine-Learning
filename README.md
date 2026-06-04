@@ -4,6 +4,10 @@
 ## K-Nearest Neighbors
 `neighbors.KNeighborsClassifier`
 
+| Classification | Regression |
+| -------------- | ---------- |
+| Assign the test data point to the class that appears most frequently among the k-nearest neighbors | Assign the test data point the average of the k-nearest neighbors' values |
+
 ![K-Nearest Neighbors](Model-Image/knn.png)
 
 <table>
