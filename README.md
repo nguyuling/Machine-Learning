@@ -2,7 +2,7 @@
 A type of machine learning that trained the model using labeled dataset to predict outcomes
 
 <details>
-<summary><b>K-Nearest Neighbors<b></summary>
+<summary><h3>K-Nearest Neighbors<h3></summary>
 
 `neighbors.KNeighborsClassifier`
 
@@ -41,7 +41,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 
 
 <details>
-<summary><b>Linear Regression<b></summary>
+<summary><h3>Linear Regression<h3></summary>
 
 `linear_model.LinearRegression`
 
