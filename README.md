@@ -124,7 +124,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 
 | Classification | Regression |
 | -------------- | ---------- |
-| Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
+| Classify data into different classes based on the values of input features | Predict continuous values based on the values of input features |
 
 ![Linear Regression](Model-Image/decision-tree.png)
 
@@ -139,15 +139,14 @@ A type of machine learning that trained the model using labeled dataset to predi
         <tr>
             <td valign="top">
                 <ul>
-                    <li>Highly scalable.</li>
-                    <li>Reuqire less training data.</li>
-                    <li>Can handle continuous, discrete and binary data.</li>
+                    <li>Easily visualized and understood.</li>
+                    <li>No preprocessing like normalization or standardization.</li>
+                    <li>Input feature can be a mix of different data types.</li>
                 </ul>
             </td>
             <td valign="top">
                 <ul>
-                    <li>Strong feature independence, as it is almost impossible to have a set of features which are completely independent of each other.</li>
-                    <li>If the category of a data has zero frequency, NB cannot make prediction.</li>
+                    <li>Tend to overfit and provide poor generalization.</li>
                 </ul>
             </td>
         </tr>
