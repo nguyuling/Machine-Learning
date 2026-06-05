@@ -28,7 +28,7 @@ from sklearn.svm import SVC
 model = SVC(kernel='linear', C=1E10)
 model.fit(X, y)
 
-# define a 2d svc function
+# 2d svc function
 def decision_function(model, ax=None, plot_support=True):
     if ax is None:
         ax = plt.gca()
