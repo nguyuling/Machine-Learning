@@ -22,7 +22,6 @@ print('Accuray: ', accuracy)
 # data visualization
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
-plt.figure(figsize=(20, 10))
-plt.title('DT: Iris Species Prediction')
+plt.figure(figsize=(20, 13))
 plot_tree(dtc, filled=True, feature_names=iris.feature_names, class_names=iris.target_names)
 plt.savefig('Model-Image/decision-tree.png', dpi=300, bbox_inches='tight')
