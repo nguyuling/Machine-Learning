@@ -59,8 +59,8 @@ nearest_neighbors = X_train_pca[neighbor_indices[0]]
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 8))
 
-scatter_train = plt.scatter(X_train_pca[:, 0], X_train_pca[:, 1], c=y_train_encoded, cmap='viridis', edgecolors='k', s=100, alpha=0.7)
-scatter_test = plt.scatter(test_point[:, 0], test_point[:, 1], c='red', marker='X', s=200, zorder=5)
+scatter_train = plt.scatter(X_train_pca[:, 0], X_train_pca[:, 1], c=y_train_encoded, cmap='summer', edgecolors='k', s=60, alpha=0.8)
+scatter_test = plt.scatter(test_point[:, 0], test_point[:, 1], c='red', marker='X', s=120, zorder=5)
 for i in range(len(nearest_neighbors)):
     plt.plot([test_point[0, 0], nearest_neighbors[i, 0]],
              [test_point[0, 1], nearest_neighbors[i, 1]],
@@ -68,9 +68,7 @@ for i in range(len(nearest_neighbors)):
 
 handles, labels = scatter_train.legend_elements()
 class_names = list(label_encoder.classes_)
-plt.title('KNN: Training Data with 3 Nearest Neighbors of a Test Point')
-plt.xlabel(f'Principal Component 1 ({pca.explained_variance_ratio_[0]:.2%})')
-plt.ylabel(f'Principal Component 2 ({pca.explained_variance_ratio_[1]:.2%})')
+plt.title('KNN (N=3): Iris Species Prediction')
 plt.grid(True, alpha=0.3)
 plt.legend(
     handles + [scatter_test], 
