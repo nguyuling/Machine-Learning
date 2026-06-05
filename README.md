@@ -1,5 +1,5 @@
-# Supervised Learning
-A type of machine learning that trained the model using labeled dataset to predict outcomes
+## Supervised Learning
+A type of machine learning that trained the model using labeled dataset to predict outcomes.
 
 <details>
 <summary><h3>K-Nearest Neighbors<h3></summary>
@@ -203,9 +203,10 @@ A type of machine learning that trained the model using labeled dataset to predi
 
 | Classification | Regression |
 | -------------- | ---------- |
-| Mode of decision trees' prediction | Mean of decision trees' prediction |
+| Find the hyperplane with maximum margin that separates the data points into different classes. | Similar to classification.  |
 
 ![SVM](Model-Image/svm.png)
+![SVM-kernel](Model-Image/svm-kernel.png)
 
 <table>
     <thead>
@@ -218,15 +219,14 @@ A type of machine learning that trained the model using labeled dataset to predi
         <tr>
             <td valign="top">
                 <ul>
-                    <li>Robustness to overfitting.</li>
-                    <li>High accuracy.</li>
-                    <li>RF can provide information about the importance of each feature in the model.</li>
+                    <li>Works well with high dimensional space (with kernel).</li>
+                    <li>Requires very less memory.</li>
                 </ul>
             </td>
             <td valign="top">
                 <ul>
-                    <li>More time and resources consuming.</li>
-                    <li>More complex and less intuitive.</li>
+                    <li>Time consuming and no suitable with large datasets.</li>
+                    <li>Do not work well with overlapping classes.</li>
                 </ul>
             </td>
         </tr>
@@ -234,4 +234,4 @@ A type of machine learning that trained the model using labeled dataset to predi
 </table>
 </details>
 
-# Unsupervised Learning
+## Unsupervised Learning
