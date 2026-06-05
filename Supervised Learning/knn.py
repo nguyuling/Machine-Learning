@@ -66,7 +66,7 @@ for i in range(len(nearest_neighbors)):
 
 handles, labels = scatter_train.legend_elements()
 class_names = list(label_encoder.classes_)
-plt.title('KNN (N=3): Iris Species Prediction')
+plt.title('KNN (N=3): Iris Species Prediction', weight='bold')
 plt.grid(True, alpha=0.3)
 plt.legend(
     handles + [scatter_test], 
