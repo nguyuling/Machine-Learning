@@ -77,6 +77,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 </table>
 </details>
 
+
 <details>
 <summary><h3>Naive Bayes<h3></summary>
 
@@ -117,6 +118,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 </table>
 </details>
 
+
 <details>
 <summary><h3>Decision Trees<h3></summary>
 
@@ -153,8 +155,7 @@ A type of machine learning that trained the model using labeled dataset to predi
   </tbody>
 </table>
 </details>
-<details>
-<summary><h3>Decision Trees<h3></summary>
+
 
 <details>
 <summary><h3>Random Forest<h3></summary>
@@ -166,6 +167,45 @@ A type of machine learning that trained the model using labeled dataset to predi
 | Mode of decision trees' prediction | Mean of decision trees' prediction |
 
 ![Random Forest](Model-Image/random-forest.png)
+
+<table>
+    <thead>
+        <tr>
+            <th align="center" width="50%">Strength</th>
+            <th align="center" width="50%">Weakness</th>
+        </tr>
+    </thead>
+  <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li>Robustness to overfitting.</li>
+                    <li>High accuracy.</li>
+                    <li>RF can provide information about the importance of each feature in the model.</li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li>More time and resources consuming.</li>
+                    <li>More complex and less intuitive.</li>
+                </ul>
+            </td>
+        </tr>
+  </tbody>
+</table>
+</details>
+
+
+<details>
+<summary><h3>Support Vector Machine<h3></summary>
+
+`svm.SVC`
+
+| Classification | Regression |
+| -------------- | ---------- |
+| Mode of decision trees' prediction | Mean of decision trees' prediction |
+
+![SVM](Model-Image/svm.png)
 
 <table>
     <thead>
