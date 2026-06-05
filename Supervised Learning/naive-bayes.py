@@ -35,7 +35,7 @@ for lh in leg.legend_handles:
     lh.set_alpha(1.0)
 
 plt.tight_layout()
-plt.savefig('Model-Image/naive-bayes.png', dpi=300, bbox_inches='tight')
+plt.savefig('Model-Image/naive-bayes.png', dpi=300)
 
 # probability predictions
 yprob = model_GNB.predict_proba(Xnew)
