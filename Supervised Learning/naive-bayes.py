@@ -24,7 +24,8 @@ plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='summer')
 lim = plt.axis()
 plt.scatter(Xnew[:, 0], Xnew[:, 1], c=ynew, s=20, cmap='summer', alpha=0.1)
 plt.axis(lim)
-# plt.show()
+plt.tight_layout()
+plt.savefig('Model-Image/naive-bayes.png', dpi=300, bbox_inches='tight')
 
 # probability predictions
 yprob = model_GNB.predict_proba(Xnew)
