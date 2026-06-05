@@ -20,7 +20,6 @@ Xnew = [-6, -14] + [14, 18] * rng.rand(2000, 2)
 ynew = model_GNB.predict(Xnew)
 
 # data visualization
-plt.figure(figsize=(8, 7))
 plt.scatter(X[y == 0, 0], X[y == 0, 1], c='#228B22', marker='o', s=60, edgecolors='k', alpha=0.8, label='Train: Class 0')
 plt.scatter(X[y == 1, 0], X[y == 1, 1], c='#FFD700', marker='o', s=60, edgecolors='k', alpha=0.8, label='Train: Class 1')
 lim = plt.axis()

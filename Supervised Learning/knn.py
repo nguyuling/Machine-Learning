@@ -57,8 +57,6 @@ nearest_neighbors = X_train_pca[neighbor_indices[0]]
 
 # data visualization
 import matplotlib.pyplot as plt
-plt.figure(figsize=(10, 8))
-
 scatter_train = plt.scatter(X_train_pca[:, 0], X_train_pca[:, 1], c=y_train_encoded, cmap='summer', edgecolors='k', s=60, alpha=0.8)
 scatter_test = plt.scatter(test_point[:, 0], test_point[:, 1], c='red', marker='X', s=120, zorder=5)
 for i in range(len(nearest_neighbors)):

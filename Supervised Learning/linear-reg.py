@@ -39,6 +39,7 @@ print('R2 score: ', r2_score(y_test, y_pred))
 
 # data visualization (actual vs predicted)
 y_pred = regressor.predict(X)
+plt.figure(figsize=(20, 12))
 plt.scatter(X, y, color='#228B22', s=60, edgecolors='k', alpha=0.8, label='Train data')
 plt.scatter(X, y_pred, color='#FFD700', s=60, edgecolors='k', alpha=0.8, label='Test data')
 plt.plot(X, y_pred, color='red')
