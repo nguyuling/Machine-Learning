@@ -20,10 +20,23 @@ Xnew = [-6, -14] + [14, 18] * rng.rand(2000, 2)
 ynew = model_GNB.predict(Xnew)
 
 # data visualization
-plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='summer')
+plt.figure(figsize=(10, 8))
+plt.scatter(X[y == 0, 0], X[y == 0, 1], c='#228B22', marker='o', s=60, edgecolors='k', alpha=0.8, label='Train: Class 0')
+plt.scatter(X[y == 1, 0], X[y == 1, 1], c='#FFD700', marker='o', s=60, edgecolors='k', alpha=0.8, label='Train: Class 1')
 lim = plt.axis()
-plt.scatter(Xnew[:, 0], Xnew[:, 1], c=ynew, s=20, cmap='summer', alpha=0.1)
+plt.scatter(Xnew[ynew == 0, 0], Xnew[ynew == 0, 1], c='#228B22', marker='.', s=60, alpha=0.15, label='Test: Class 0')
+plt.scatter(Xnew[ynew == 1, 0], Xnew[ynew == 1, 1], c='#FFD700', marker='.', s=60, alpha=0.15, label='Test: Class 1')
+
 plt.axis(lim)
+plt.title('Gaussian NB: Training Clusters & Predicted Test Grid')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.grid(True, alpha=0.3)
+
+leg = plt.legend(loc='upper left', frameon=True)
+for lh in leg.legend_handles: 
+    lh.set_alpha(1.0)
+
 plt.tight_layout()
 plt.savefig('Model-Image/naive-bayes.png', dpi=300, bbox_inches='tight')
 
