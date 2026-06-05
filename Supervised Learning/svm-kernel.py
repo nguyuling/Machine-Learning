@@ -10,7 +10,7 @@ y = iris.target
 import numpy as np
 x_min, x_max = X[:, 0].min()-1, X[:, 0].max()+1
 y_min, y_max = X[:, 1].min()-1, X[:, 1].max()+1
-h = (x_max / x_min)/100
+h = 0.02
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 X_plot = np.c_[xx.ravel(), yy.ravel()]
 
@@ -23,14 +23,16 @@ Z = Z.reshape(xx.shape)
 
 # data visualization
 import matplotlib.pyplot as plt
-plt.subplot(121)
 plt.contourf(xx, yy, Z, cmap=plt.cm.tab10, alpha=0.2)
 plt.contour(xx, yy, Z, colors='k', linewidths=0.5, alpha=0.5)
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1)
+scatter = plt.scatter(X[:, 0], X[:, 1], c=y, cmap='summer', edgecolors='k', alpha=0.8, s=60)
 plt.xlabel('Sepal length')
 plt.ylabel('Sepal width')
-plt.xlim(xx.min(), xx.max())
 plt.title('SVM with Kernel: Classifier)', weight='bold')
+plt.grid(True, alpha=0.3)
+handles, _ = scatter.legend_elements()
+class_labels = list(iris.target_names)
+plt.legend(handles, class_labels, loc='upper right', frameon=True, facecolor='white')
 plt.tight_layout()
 plt.savefig('Model-Image/svm-kernel.png', dpi=300, bbox_inches='tight')
 
