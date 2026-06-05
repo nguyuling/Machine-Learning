@@ -25,3 +25,19 @@ print('Accuracy: ', accuracy_score(y_test, y_pred))
 print('Precision: ', precision_score(y_test, y_pred, average='weighted'))
 print('Recall: ', recall_score(y_test, y_pred, average='weighted'))
 print('f1 score: ', f1_score(y_test, y_pred, average='weighted'))
+
+# calculate feature importances from all 100 trees
+import numpy as np
+importances = rfc.feature_importances_
+indices = np.argsort(importances)
+
+# data visualization
+import matplotlib.pyplot as plt
+plt.title('RF: Feature Importance Across All Decision Trees', weight='bold')
+plt.barh(range(X.shape[1]), importances[indices], color='#228B22', align='center', edgecolor='k', alpha=0.8)
+plt.yticks(range(X.shape[1]), [headers[i] for i in indices])
+plt.xlabel('Relative Importance Score')
+plt.grid(True, alpha=0.3)
+
+plt.tight_layout()
+plt.savefig('Model-Image/random-forest.png', dpi=300)
