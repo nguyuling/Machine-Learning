@@ -88,7 +88,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
 
-![Linear Regression](Model-Image/naive-bayes.png)
+![Naive Bayes](Model-Image/naive-bayes.png)
 
 <table>
     <thead>
@@ -126,7 +126,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Classify data into different classes based on the values of input features | Predict continuous values based on the values of input features |
 
-![Linear Regression](Model-Image/decision-tree.png)
+![Decision Tree](Model-Image/decision-tree.png)
 
 <table>
     <thead>
@@ -147,6 +147,46 @@ A type of machine learning that trained the model using labeled dataset to predi
             <td valign="top">
                 <ul>
                     <li>Tend to overfit and provide poor generalization.</li>
+                </ul>
+            </td>
+        </tr>
+  </tbody>
+</table>
+</details>
+<details>
+<summary><h3>Decision Trees<h3></summary>
+
+<details>
+<summary><h3>Random Forest<h3></summary>
+
+`ensemble.RandomForestClassifier`
+
+| Classification | Regression |
+| -------------- | ---------- |
+| Mode of decision trees' prediction | Mean of decision trees' prediction |
+
+![Random Forest](Model-Image/random-forest.png)
+
+<table>
+    <thead>
+        <tr>
+            <th align="center" width="50%">Strength</th>
+            <th align="center" width="50%">Weakness</th>
+        </tr>
+    </thead>
+  <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li>Robustness to overfitting.</li>
+                    <li>High accuracy.</li>
+                    <li>RF can provide information about the importance of each feature in the model.</li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li>More time and resources consuming.</li>
+                    <li>More complex and less intuitive.</li>
                 </ul>
             </td>
         </tr>
