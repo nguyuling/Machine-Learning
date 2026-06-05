@@ -61,5 +61,6 @@ plt.legend(
     frameon=True
 )
 plt.title('SVM: Classifier & Margins (Touching SV on Both Classes)', weight='bold')
+plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('Model-Image/svm.png', dpi=300)
