@@ -39,16 +39,27 @@ def decision_function(model, ax=None, plot_support=True):
     Y, X = np.meshgrid(y, x)
     xy = np.vstack([X.ravel(), Y.ravel()]).T
     P = model.decision_function(xy).reshape(X.shape)
-    # plot decision boundaries
     ax.contour(X, Y, P, colors='k', levels=[-1, 0, 1], alpha=0.5, linestyles=['--', '-', '--'])
     if plot_support:
+        # Added a label here so the user knows what the giant empty circles represent
         ax.scatter(model.support_vectors_[:, 0],
-            model.support_vectors_[:, 1],
-            s=300, linewidth=1, facecolors='none');
+                   model.support_vectors_[:, 1],
+                   s=300, linewidth=1, facecolors='none', edgecolors='k', label='Support Vectors')
         ax.set_xlim(xlim)
         ax.set_ylim(ylim)
-plt.scatter(X[:, 0], X[:, 1], c=y, s=60, cmap='summer', edgecolors='k', alpha=0.8)
+
+# data visualization
+scatter = plt.scatter(X[:, 0], X[:, 1], c=y, s=60, cmap='summer', edgecolors='k', alpha=0.8)
 decision_function(model)
+handles, _ = scatter.legend_elements()
+ax = plt.gca()
+handles_ax, labels_ax = ax.get_legend_handles_labels()
+plt.legend(
+    handles + handles_ax, 
+    ['Class 0', 'Class 1'] + labels_ax, 
+    loc='upper right', 
+    frameon=True
+)
 plt.title('SVM: Classifier & Margins (Touching SV on Both Classes)', weight='bold')
 plt.tight_layout()
 plt.savefig('Model-Image/svm.png', dpi=300)
