@@ -78,7 +78,7 @@ A type of machine learning that trained the model using labeled dataset to predi
 </details>
 
 <details>
-<summary><h3>Maive Bayes<h3></summary>
+<summary><h3>Naive Bayes<h3></summary>
 
 `naive_bayes.GaussianNB` (features are continuous variables)
 `naive_bayes.BernoulliNB` (features are discrete counts)
@@ -89,6 +89,44 @@ A type of machine learning that trained the model using labeled dataset to predi
 | Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
 
 ![Linear Regression](Model-Image/naive-bayes.png)
+
+<table>
+    <thead>
+        <tr>
+            <th align="center" width="50%">Strength</th>
+            <th align="center" width="50%">Weakness</th>
+        </tr>
+    </thead>
+  <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li>Highly scalable.</li>
+                    <li>Reuqire less training data.</li>
+                    <li>Can handle continuous, discrete and binary data.</li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li>Strong feature independence, as it is almost impossible to have a set of features which are completely independent of each other.</li>
+                    <li>If the category of a data has zero frequency, NB cannot make prediction.</li>
+                </ul>
+            </td>
+        </tr>
+  </tbody>
+</table>
+</details>
+
+<details>
+<summary><h3>Decision Trees<h3></summary>
+
+`tree.DecisionTreeClassifier`
+
+| Classification | Regression |
+| -------------- | ---------- |
+| Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
+
+![Linear Regression](Model-Image/decision-tree.png)
 
 <table>
     <thead>
