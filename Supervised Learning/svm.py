@@ -47,7 +47,7 @@ def decision_function(model, ax=None, plot_support=True):
             s=300, linewidth=1, facecolors='none');
         ax.set_xlim(xlim)
         ax.set_ylim(ylim)
-plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='summer')
+plt.scatter(X[:, 0], X[:, 1], c=y, s=60, cmap='summer', edgecolors='k', alpha=0.8)
 decision_function(model)
 plt.title('SVM: Classifier & Margins (Touching SV on Both Classes)', weight='bold')
 plt.tight_layout()
