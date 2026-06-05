@@ -13,29 +13,29 @@ A type of machine learning that trained the model using labeled dataset to predi
 ![K-Nearest Neighbors](Model-Image/knn.png)
 
 <table>
-  <thead>
-    <tr>
-      <th align="center" width="50%">Strength</th>
-      <th align="center" width="50%">Weakness</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <ul>
-          <li>Simple and easy to understand.</li>
-          <li>Versatile as it can be used for classification and regression.</li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li>High memory storage required.</li>
-          <li>Does not work well on datasets with many features.</li>
-          <li>Slow prediction if N is big.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th align="center" width="50%">Strength</th>
+            <th align="center" width="50%">Weakness</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td valign="top">
+                    <ul>
+                        <li>Simple and easy to understand.</li>
+                        <li>Versatile as it can be used for classification and regression.</li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <ul>
+                        <li>High memory storage required.</li>
+                        <li>Does not work well on datasets with many features.</li>
+                        <li>Slow prediction if N is big.</li>
+                    </ul>
+                </td>
+            </tr>
+    </tbody>
 </table>
 </details>
 
@@ -52,30 +52,69 @@ A type of machine learning that trained the model using labeled dataset to predi
 ![Linear Regression](Model-Image/linear-reg.png)
 
 <table>
-  <thead>
-    <tr>
-      <th align="center" width="50%">Strength</th>
-      <th align="center" width="50%">Weakness</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <ul>
-          <li>Fast to train and predict.</li>
-          <li>Easy to understand using formulas.</li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li>Coeeficient might be hard to interpret if the dataset has highly correlated features.</li>
-          <li>Does not work well on samll datasets.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
+    <thead>
+            <tr>
+                <th align="center" width="50%">Strength</th>
+                <th align="center" width="50%">Weakness</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li>Fast to train and predict.</li>
+                    <li>Easy to understand using formulas.</li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li>Coeeficient might be hard to interpret if the dataset has highly correlated features.</li>
+                    <li>Does not work well on samll datasets.</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
 </table>
 </details>
 
+<details>
+<summary><h3>Maive Bayes<h3></summary>
+
+`naive_bayes.GaussianNB` (features are continuous variables)
+`naive_bayes.BernoulliNB` (features are discrete counts)
+`naive_bayes.MultinomialNB` features that are binary)
+
+| Classification | Regression |
+| -------------- | ---------- |
+| Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
+
+![Linear Regression](Model-Image/naive-bayes.png)
+
+<table>
+    <thead>
+        <tr>
+            <th align="center" width="50%">Strength</th>
+            <th align="center" width="50%">Weakness</th>
+        </tr>
+    </thead>
+  <tbody>
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li>Highly scalable.</li>
+                    <li>Reuqire less training data.</li>
+                    <li>Can handle continuous, discrete and binary data.</li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul>
+                    <li>Strong feature independence, as it is almost impossible to have a set of features which are completely independent of each other.</li>
+                    <li>If the category of a data has zero frequency, NB cannot make prediction.</li>
+                </ul>
+            </td>
+        </tr>
+  </tbody>
+</table>
+</details>
 
 # Unsupervised Learning
