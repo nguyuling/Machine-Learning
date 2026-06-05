@@ -28,7 +28,7 @@ plt.scatter(Xnew[ynew == 0, 0], Xnew[ynew == 0, 1], c='#228B22', marker='.', s=6
 plt.scatter(Xnew[ynew == 1, 0], Xnew[ynew == 1, 1], c='#FFD700', marker='.', s=60, alpha=0.15, label='Test: Class 1')
 
 plt.axis(lim)
-plt.title('Gaussian NB: Training Clusters & Predicted Test Grid')
+plt.title('Gaussian NB: Training Clusters vs Predicted Test Grid')
 plt.xlabel('Feature 1')
 plt.ylabel('Feature 2')
 plt.grid(True, alpha=0.3)
