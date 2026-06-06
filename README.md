@@ -84,9 +84,9 @@ linear_model.LinearRegression
 ## 3.   Naive Bayes
 
 ```
-naive_bayes.GaussianNB (features are continuous variables)
-naive_bayes.BernoulliNB (features are discrete counts)
-naive_bayes.MultinomialNB features that are binary)
+naive_bayes.GaussianNB (continuous features variable)
+naive_bayes.BernoulliNB (discrete features variable)
+naive_bayes.MultinomialNB (binary features variable)
 ```
 - Classification: Calculates the probability of a sample belonging to a particular class based on the probabilities of its features
 
