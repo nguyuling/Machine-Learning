@@ -4,11 +4,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 <details>
 <summary><h3>K-Nearest Neighbors<h3></summary>
 
-`neighbors.KNeighborsClassifier`
-
-| Classification | Regression |
-| -------------- | ---------- |
-| Assign the test data point to the class that appears most frequently among the k-nearest neighbors | Assign the test data point the average of the k-nearest neighbors' values |
+- `neighbors.KNeighborsClassifier`
+- **Classification**: Assign the test data point to the class that appears most frequently among the k-nearest neighbors
+- **Regression**: Assign the test data point the average of the k-nearest neighbors' values
 
 <p align="center">
     <img src="Model-Image/knn.png" width="450" alt="K-Nearest Neighbors">
