@@ -2,9 +2,11 @@
 A type of machine learning that trained the model using labeled dataset to predict outcomes.
 
 <h3>1.  K-Nearest Neighbors<h3>
+
 ```
 neighbors.KNeighborsClassifier
 ```
+
 - **Classification**: Assign the test data point to the class that appears most frequently among the k-nearest neighbors
 - **Regression**: Assign the test data point the average of the k-nearest neighbors' values
 
