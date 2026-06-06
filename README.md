@@ -1,10 +1,9 @@
 ## Supervised Learning
 A type of machine learning that trained the model using labeled dataset to predict outcomes.
 
-<details>
-<summary><h3>K-Nearest Neighbors<h3></summary>
+<h3>1.  K-Nearest Neighbors<h3></summary>
 ```
-`neighbors.KNeighborsClassifier`
+neighbors.KNeighborsClassifier
 ```
 - **Classification**: Assign the test data point to the class that appears most frequently among the k-nearest neighbors
 - **Regression**: Assign the test data point the average of the k-nearest neighbors' values
@@ -38,7 +37,6 @@ A type of machine learning that trained the model using labeled dataset to predi
             </tr>
     </tbody>
 </table>
-</details>
 
 
 <details>
