@@ -1,4 +1,4 @@
-<details>
+<details open>
 <summary><h1>Supervised Learning</h1></summary>
 
 A type of machine learning that trained the model using labeled dataset to predict outcomes.
@@ -241,6 +241,6 @@ svm.SVC
 </details>
 
 
-<details>
+<details open>
 <summary><h1>Unsupervised Learning</h1></summary>
 </details>
