@@ -129,7 +129,7 @@ tree.DecisionTreeClassifier
 - Regression: Predict continuous values based on the values of input features
 
 <p align="center">
-    <img src="Model-Image/decision-tree.png" width="450" alt="Decision Tree">
+    <img src="Model-Image/decision-tree.png" width="600" alt="Decision Tree">
 </p>
 
 <table>
