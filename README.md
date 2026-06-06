@@ -88,7 +88,7 @@ naive_bayes.GaussianNB (continuous features variable)
 naive_bayes.BernoulliNB (discrete features variable)
 naive_bayes.MultinomialNB (binary features variable)
 ```
-- Classification: Calculates the probability of a sample belonging to a particular class based on the probabilities of its features
+- **Classification**: Calculates the probability of a sample belonging to a particular class based on the probabilities of its features
 
 <p align="center">
     <img src="Model-Image/naive-bayes.png" width="450" alt="Naive Bayes">
@@ -127,8 +127,8 @@ naive_bayes.MultinomialNB (binary features variable)
 tree.DecisionTreeClassifier
 ```
 
-- Classification: Classify data into different classes based on the values of input features
-- Regression: Predict continuous values based on the values of input features
+- **Classification**: Classify data into different classes based on the values of input features
+- **Regression**: Predict continuous values based on the values of input features
 
 <p align="center">
     <img src="Model-Image/decision-tree.png" width="600" alt="Decision Tree">
@@ -166,8 +166,8 @@ tree.DecisionTreeClassifier
 ensemble.RandomForestClassifier
 ```
 
-- Classification: Mode of decision trees' prediction
-- Regression: Mean of decision trees' prediction
+- **Classification**: Mode of decision trees' prediction
+- **Regression**: Mean of decision trees' prediction
 
 <p align="center">
     <img src="Model-Image/random-forest.png" width="450" alt="Random Forest">
@@ -206,8 +206,8 @@ ensemble.RandomForestClassifier
 svm.SVC
 ```
 
-- Classification: Find the hyperplane with maximum margin that separates the data points into different classes.
-- Regression: Similar to classification
+- **Classification**: Find the hyperplane with maximum margin that separates the data points into different classes.
+- **Regression**: Similar to classification
 
 <p align="center">
     <img src="Model-Image/svm.png" width="450" alt="SVM">
