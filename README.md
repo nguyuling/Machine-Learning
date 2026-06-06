@@ -1,7 +1,7 @@
-## Supervised Learning
+# Supervised Learning
 A type of machine learning that trained the model using labeled dataset to predict outcomes.
 
-<h3>1.  K-Nearest Neighbors<h3>
+## 1.   K-Nearest Neighbors
 
 ```
 neighbors.KNeighborsClassifier
@@ -41,14 +41,13 @@ neighbors.KNeighborsClassifier
 </table>
 
 
-<details>
-<summary><h3>Linear Regression<h3></summary>
+## 2.   Linear Regression
 
-`linear_model.LinearRegression`
+```
+linear_model.LinearRegression
+```
 
-| Classification | Regression |
-| -------------- | ---------- |
-| N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
+- **Regression**: Use a single feature to predict the target based on the line of regression (best-fit line)
 
 <p align="center">
     <img src="Model-Image/linear-reg.png" width="450" alt="Linear Regression">
@@ -78,19 +77,16 @@ neighbors.KNeighborsClassifier
         </tr>
     </tbody>
 </table>
-</details>
 
 
-<details>
-<summary><h3>Naive Bayes<h3></summary>
+## 3.   Naive Bayes
 
-`naive_bayes.GaussianNB` (features are continuous variables)
-`naive_bayes.BernoulliNB` (features are discrete counts)
-`naive_bayes.MultinomialNB` features that are binary)
-
-| Classification | Regression |
-| -------------- | ---------- |
-| Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
+```
+naive_bayes.GaussianNB (features are continuous variables)
+naive_bayes.BernoulliNB (features are discrete counts)
+naive_bayes.MultinomialNB features that are binary)
+```
+- Classification: Calculates the probability of a sample belonging to a particular class based on the probabilities of its features
 
 <p align="center">
     <img src="Model-Image/naive-bayes.png" width="450" alt="Naive Bayes">
@@ -121,17 +117,16 @@ neighbors.KNeighborsClassifier
         </tr>
   </tbody>
 </table>
-</details>
 
 
-<details>
-<summary><h3>Decision Trees<h3></summary>
+## 4.   Decision Trees
 
-`tree.DecisionTreeClassifier`
+```
+tree.DecisionTreeClassifier
+```
 
-| Classification | Regression |
-| -------------- | ---------- |
-| Classify data into different classes based on the values of input features | Predict continuous values based on the values of input features |
+- Classification: Classify data into different classes based on the values of input features
+- Regression: Predict continuous values based on the values of input features
 
 <p align="center">
     <img src="Model-Image/decision-tree.png" width="450" alt="Decision Tree">
@@ -161,17 +156,16 @@ neighbors.KNeighborsClassifier
         </tr>
   </tbody>
 </table>
-</details>
 
 
-<details>
-<summary><h3>Random Forest<h3></summary>
+## 5.   Random Forest
 
-`ensemble.RandomForestClassifier`
+```
+ensemble.RandomForestClassifier
+```
 
-| Classification | Regression |
-| -------------- | ---------- |
-| Mode of decision trees' prediction | Mean of decision trees' prediction |
+- Classification: Mode of decision trees' prediction
+- Regression: Mean of decision trees' prediction
 
 <p align="center">
     <img src="Model-Image/random-forest.png" width="450" alt="Random Forest">
@@ -202,17 +196,16 @@ neighbors.KNeighborsClassifier
         </tr>
   </tbody>
 </table>
-</details>
 
 
-<details>
-<summary><h3>Support Vector Machine<h3></summary>
+## 6.   Support Vector Machine
 
-`svm.SVC`
+```
+svm.SVC
+```
 
-| Classification | Regression |
-| -------------- | ---------- |
-| Find the hyperplane with maximum margin that separates the data points into different classes. | Similar to classification.  |
+- Classification: Find the hyperplane with maximum margin that separates the data points into different classes.
+- Regression: Similar to classification
 
 <p align="center">
     <img src="Model-Image/svm.png" width="450" alt="SVM">
@@ -243,6 +236,7 @@ neighbors.KNeighborsClassifier
         </tr>
   </tbody>
 </table>
-</details>
 
-## Unsupervised Learning
+
+
+# Unsupervised Learning
