@@ -10,7 +10,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Assign the test data point to the class that appears most frequently among the k-nearest neighbors | Assign the test data point the average of the k-nearest neighbors' values |
 
-![K-Nearest Neighbors](Model-Image/knn.png)
+<p align="center">
+    <img src="Model-Image/knn.png" width="450" alt="K-Nearest Neighbors">
+</p>
 
 <table>
     <thead>
@@ -49,7 +51,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | N/A | Use a single feature to predict the target based on the line of regression (best-fit line) |
 
-![Linear Regression](Model-Image/linear-reg.png)
+<p align="center">
+    <img src="Model-Image/linear-reg.png" width="450" alt="Linear Regression">
+</p>
 
 <table>
     <thead>
@@ -89,7 +93,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Calculates the probability of a sample belonging to a particular class based on the probabilities of its features | N/A |
 
-![Naive Bayes](Model-Image/naive-bayes.png)
+<p align="center">
+    <img src="Model-Image/naive-bayes.png" width="450" alt="Naive Bayes">
+</p>
 
 <table>
     <thead>
@@ -128,7 +134,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Classify data into different classes based on the values of input features | Predict continuous values based on the values of input features |
 
-![Decision Tree](Model-Image/decision-tree.png)
+<p align="center">
+    <img src="Model-Image/decision-tree.png" width="450" alt="Decision Tree">
+</p>
 
 <table>
     <thead>
@@ -166,7 +174,9 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Mode of decision trees' prediction | Mean of decision trees' prediction |
 
-![Random Forest](Model-Image/random-forest.png)
+<p align="center">
+    <img src="Model-Image/random-forest.png" width="450" alt="Random Forest">
+</p>
 
 <table>
     <thead>
@@ -205,8 +215,10 @@ A type of machine learning that trained the model using labeled dataset to predi
 | -------------- | ---------- |
 | Find the hyperplane with maximum margin that separates the data points into different classes. | Similar to classification.  |
 
-![SVM](Model-Image/svm.png)
-![SVM-kernel](Model-Image/svm-kernel.png)
+<p align="center">
+    <img src="Model-Image/svm.png" width="450" alt="SVM">
+    <img src="Model-Image/svm-kernel.png" width="450" alt="SVM-kernel">
+</p>
 
 <table>
     <thead>
