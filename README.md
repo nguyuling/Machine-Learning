@@ -1,6 +1,4 @@
-<details open>
-<summary><h1>Supervised Learning</h1></summary>
-
+# Supervised Learning
 A type of machine learning that trained the model using labeled dataset to predict outcomes.
 
 ## 1.   K-Nearest Neighbors
@@ -238,9 +236,5 @@ svm.SVC
         </tr>
   </tbody>
 </table>
-</details>
 
-
-<details open>
-<summary><h1>Unsupervised Learning</h1></summary>
-</details>
+# Unsupervised Learning</h1></summary>
